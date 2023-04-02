@@ -1,0 +1,23 @@
+@use "../../scss/variables" as *;
+
+.home {
+    &__banner__image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        width: 100%;
+        background-size: cover;
+    }
+
+    &__products {
+        padding: 63px 90px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+        justify-content: center;
+        background-color: $header-background;
+    }
+}
