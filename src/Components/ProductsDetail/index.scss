@@ -1,0 +1,145 @@
+@use "../../scss/variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+.product-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 850px;
+    padding: 131px 108px 158px 78px;
+    gap: 165px;
+
+    &__left-side {
+        display: flex;
+        flex-direction: column;
+
+        &__card {
+            padding-bottom: 3.813rem;
+
+            img {
+                width: 100%;
+                height: 321px;
+            }
+
+            p {
+                padding-top: 4.125rem;
+                font-family: $font-family-app;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.25rem;
+                line-height: 1.25rem;
+                text-align: center;
+            }
+        }
+
+        &__description {
+
+            padding-left: 45px;
+
+            h1 {
+                padding-left: 6px;
+                font-family: $font-family-app;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 1.563rem;
+                line-height: 1.25rem;
+                text-align: left;
+                color: $header-background;
+            }
+
+            p {
+                padding-left: 6px;
+                padding-top: 1.938rem;
+                padding-bottom: 1.188rem;
+                border-bottom: 2px solid $contrast-color;
+
+                font-family: $font-family-app;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.125rem;
+                line-height: 1.25rem;
+                color: $header-background;
+            }
+        }
+    }
+
+    &__right-side {
+        display: flex;
+        flex-direction: column;
+        width: 34.313rem;
+
+        h1 {
+            padding-bottom: 28px;
+            font-family: $font-family-app;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: left;
+            color: $header-background;
+            border-bottom: 3px solid $contrast-color;
+        }
+
+        h2 {
+            padding-top: 61px;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: left;
+            color: $header-background;
+        }
+
+        p {
+            font-family: $font-family-app;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 20px;
+            text-align: left;
+            color: $header-background;
+            text-shadow: 0px 4px 4px rgba(203, 203, 203, 0.251);
+            padding-top: 27px;
+            padding-bottom: 21px;
+        }
+
+        &__cube-colors {
+            display: flex;
+            gap: 1rem;
+            padding-bottom: 164px;
+
+            div {
+                border: 1px solid #000000;
+            }
+        }
+
+        button {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-top: 16px 10px;
+            width: 100%;
+            height: 61px;
+            background-color: $contrast-color;
+            border-radius: 10px;
+            border: none;
+
+            img {
+                padding-right: 13px;
+            }
+
+            a {
+                text-decoration: none;
+                font-family: $font-family-app;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 20px;
+                text-align: center;
+                color: $white;
+            }
+
+        }
+    }
+}
