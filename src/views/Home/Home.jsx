@@ -9,6 +9,7 @@ const Home = ({ data }) => {
 
   document.title = 'Home - DNC Store';
   return (
+
     <div className='home' >
       <HeaderMenu />
 
@@ -25,6 +26,7 @@ const Home = ({ data }) => {
       </div>
       <Footer />
     </div >
+
   )
 }
 

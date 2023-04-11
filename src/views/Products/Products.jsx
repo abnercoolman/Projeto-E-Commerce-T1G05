@@ -1,26 +1,29 @@
 import React from 'react'
 import HeaderMenu from '../../Components/HeaderMenu/HeaderMenu'
 import Footer from '../../Components/Footer/Footer';
+import ProductsDetail from '../../Components/ProductsDetail/ProductsDetail';
 import './index.scss'
-import { Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-const Products = () => {
 
-    document.title = 'Product - DNC Store';
+const Products = ({ data }) => {
+
+    const { productId } = useParams();
+    //console.log(productId);
+    const selectedProduct = data.find(product => product.id == productId);
+    //console.log(selectedProduct);
+
+    document.title = selectedProduct.title;
 
     return (
+
         <div className="product">
             <HeaderMenu />
-
-            <div className="product__teste">
-                <p className="product__teste__p">Componente - Detalhes do produto</p>
-                <button className="product__teste__button">
-                    <Link to={`/pay`}>Botão para view "Pay"</Link>
-                </button>
-            </div>
-
+            <ProductsDetail data={selectedProduct} />
             <Footer />
-        </div >
+        </div>
+
+
     )
 }
 

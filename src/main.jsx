@@ -7,6 +7,7 @@ import Products from './views/Products/Products';
 import Pay from './views/Pay/Pay';
 import { PRODUCTS_MOCK } from "./mock/products.mock"
 import './index.scss'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const router = createBrowserRouter([
