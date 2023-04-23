@@ -14,7 +14,7 @@ export const PRODUCTS_MOCK = [
         imgPath: "product-2.png",
         imgPathDetail: "../../../public/product-2.png",
         title: "Microsoft Xbox Series S | Branco",
-        price: "R$ R$ 2.000,00",
+        price: "R$ 2.000,00",
         colorsText: ["Branco"],
         colors: ["white"],
         descripition: "Lorem ipsum dolor sit amet consectur",

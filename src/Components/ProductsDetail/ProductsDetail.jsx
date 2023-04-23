@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import cartIcon from "../../assets/shopping_cart.png";
 import "./index.scss";
+import ModalMyCart from "../ModalMyCart/ModalMyCart";
 
-const ProductDetail = ({ data }) => {
+const ProductDetail = ({ data, setModal }) => {
     //console.log(data);
     return (
         <div className="product-detail">
@@ -51,9 +52,9 @@ const ProductDetail = ({ data }) => {
                     ))}
                 </div>
 
-                <button>
+                <button onClick={() => setModal(true)}>
                     <img src={cartIcon} alt="Cart Icon" />
-                    <Link to={`/pay/${data.id}`}>Adicionar ao carrinho</Link>
+                    Adicionar ao carrinho
                 </button>
             </div>
         </div>

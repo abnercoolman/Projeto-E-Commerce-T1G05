@@ -1,5 +1,4 @@
 @use "../../scss/variables" as *;
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 .product-detail {
     display: flex;
@@ -82,7 +81,7 @@
 
         h2 {
             padding-top: 61px;
-            font-family: 'Inter', sans-serif;
+            font-family: $font-family-Inter;
             font-style: normal;
             font-weight: 900;
             font-size: 32px;
@@ -125,21 +124,24 @@
             border-radius: 10px;
             border: none;
 
+            text-decoration: none;
+            font-family: $font-family-app;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: $white;
+
             img {
                 padding-right: 13px;
             }
 
-            a {
-                text-decoration: none;
-                font-family: $font-family-app;
-                font-style: normal;
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 20px;
-                text-align: center;
-                color: $white;
-            }
+            // a {}
+        }
 
+        button:hover {
+            cursor: pointer;
         }
     }
 }
