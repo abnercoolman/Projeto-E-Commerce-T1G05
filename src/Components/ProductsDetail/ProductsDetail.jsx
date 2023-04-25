@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import cartIcon from "../../assets/shopping_cart.png";
 import "./index.scss";
-import ModalMyCart from "../ModalMyCart/ModalMyCart";
 
 const ProductDetail = ({ data, setModal }) => {
     //console.log(data);

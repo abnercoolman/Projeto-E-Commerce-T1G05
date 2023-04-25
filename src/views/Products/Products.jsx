@@ -6,6 +6,7 @@ import './index.scss'
 import { useParams } from 'react-router-dom';
 import ModalMyCart from '../../Components/ModalMyCart/ModalMyCart';
 import { useState } from 'react';
+import ModalCheckout from '../../Components/ModalCheckout/ModalCheckout';
 
 const Products = ({ data }) => {
 
@@ -13,6 +14,7 @@ const Products = ({ data }) => {
     const selectedProduct = data.find(product => product.id == productId);
 
     const [modal, setModal] = useState(false);
+    const [showModalCheckout, setModalCheckout] = useState(false);
 
     document.title = selectedProduct.title;
 
@@ -29,12 +31,20 @@ const Products = ({ data }) => {
                 modal === true
                     ?
                     // Se o modal estiver sendo usado isto aparecerá
-                    <ModalMyCart data={selectedProduct} setModal={setModal} />
+                    <ModalMyCart data={selectedProduct} setModal={setModal} setModalCheckout={setModalCheckout} />
                     :
                     // Caso não esteja sendo usado iremos mostrar somente o componente normal de detalhes do produto
                     null
 
             }
+            {
+                showModalCheckout === true
+                    ?
+                    <ModalCheckout data={selectedProduct} setModal={setModal} setModalCheckout={setModalCheckout} />
+                    :
+                    null
+            }
+
             <ProductsDetail data={selectedProduct} setModal={setModal} />
             <Footer />
         </div>

@@ -2,9 +2,8 @@ import React from 'react'
 import "./index.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import Pay from "../Pay/Pay";
 
-const ModalMyCart = ({ data, setModal }) => {
+const ModalMyCart = ({ data, setModal, setModalCheckout }) => {
 
     return (
 
@@ -57,7 +56,11 @@ const ModalMyCart = ({ data, setModal }) => {
                         </button>
 
                         <button className="modalMyCart__conteiner__column2__buttons__checkoutButton"
-                            onClick={() => setModal(true)}>
+                            onClick={
+                                () => {
+                                    setModalCheckout(true);
+                                    setModal(false);
+                                }}>
                             Finalizar Compra
                         </button>
                     </div>
