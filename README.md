@@ -7,7 +7,7 @@ Este repositório consiste do desenvolvimento de uma aplicação do tipo e-comme
 - Abner Colman ([@abnercoolman](https://www.github.com/abnercoolman));
 - Alan Felipe ([@AlanFelpVaz](https://github.com/AlanFelpVaz));
 - Bruno Henrique ([@BrunoHenrique80](https://github.com/BrunoHenrique80));
-- Iago Cleber ([@gomescosta](https://github.com/gomescosta));
+- Iago Cleber ([@iagocleber123](https://github.com/gomescosta));
 - Juliano dos Santos ([@Julianods11](https://github.com/Julianods11));
 - Renato Silva ([@rcsilva96](https://github.com/rcsilva96)).
 
