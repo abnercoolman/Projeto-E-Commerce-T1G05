@@ -1,0 +1,114 @@
+@use "../../scss/variables" as *;
+
+.modalCheckout {
+    background-color: rgba(217, 217, 217, 0.7);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__container {
+        width: 60vw;
+        height: 90vh;
+        padding-top: 14vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        background: #FFFFFF;
+        box-shadow: 0vw 0.5vh 0.5vh rgba(0, 0, 0, 0.25);
+        border-radius: 10vh;
+
+        &__form {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 30vw;
+
+
+            &__input {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                font-family: $font-family-app;
+                padding-bottom: 7vh;
+
+                &__title {
+                    font-family: $font-family-app;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 4.3vh;
+                    line-height: 4.3vh;
+                    padding-bottom: 3.15vh;
+
+                    text-align: left;
+                    color: $blue;
+                }
+
+
+                label {
+                    text-align: left;
+                    font-size: 2vh;
+                    line-height: 2vh;
+                    font-style: normal;
+                    font-weight: 400;
+                    padding-bottom: 1.3vh;
+                    padding-top: 2.2vh;
+
+                    color: #000000;
+                }
+
+                input {
+                    width: 30vw;
+                    height: 5.65vh;
+                    padding-left: 0.9vw;
+                    padding-top: 2vh;
+                    padding-bottom: 2vh;
+
+                    background: rgba(255, 255, 255, 0.9);
+                    border: 2px solid #7A7A7A;
+                    border-radius: 1vh;
+
+                    text-align: left;
+                    font-weight: 400;
+                    font-size: 1.8vh;
+                    line-height: 1.8vh;
+                    color: #616161;
+                }
+
+            }
+
+            &__checkoutButton {
+                width: 25vw;
+                height: 7vh;
+
+                background-color: $contrast-color;
+                border-radius: 10px;
+                border: none;
+
+                text-decoration: none;
+                font-family: $font-family-app;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 2.6vh;
+                line-height: 2.6vh;
+                text-align: center;
+                color: $white;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+    }
+}
